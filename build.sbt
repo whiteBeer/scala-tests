@@ -9,6 +9,11 @@ lazy val root = (project in file("."))
   .settings(
     name := "Akka Http Skeleton",
     libraryDependencies ++= Seq(
+      reactiveMongo,
+      reactiveMongo1,
+      reactiveMongo2,
+      slf4j,
+      slf4j2,
       akkaHttp,
       akkaStream,
       akkaTestKit % Test,
