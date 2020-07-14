@@ -1,20 +1,18 @@
 package com.sj.scala
 
+import com.sj.scala.db.DataBase
+
 import akka.actor.ActorSystem
 import scala.util.{Failure, Success}
 import akka.event.Logging
 import akka.http.scaladsl.Http
 import akka.stream.ActorMaterializer
-
 import akka.http.scaladsl.model.StatusCodes
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.{PathMatcher, Route}
-
 import scala.concurrent.{Future, Await}
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
-
-import com.sj.scala.DataBase
 
 object HealthRoute {
 

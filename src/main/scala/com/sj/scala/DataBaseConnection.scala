@@ -1,4 +1,4 @@
-package com.sj.scala
+package com.sj.scala.db
 
 import scala.concurrent.{Future, Await}
 import scala.concurrent.duration._
